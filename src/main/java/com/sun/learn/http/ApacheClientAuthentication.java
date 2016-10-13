@@ -37,6 +37,7 @@ public class ApacheClientAuthentication {
             e.printStackTrace();
         }
     }
+
 	public static void get(String[] args){
         BasicCredentialsProvider credsProvider = new BasicCredentialsProvider();
         credsProvider.setCredentials(
@@ -55,5 +56,11 @@ public class ApacheClientAuthentication {
         }catch (Exception e){
             e.printStackTrace();
         }
+
+
+    public String getString(){
+        System.out.println("1111111");
+        return "111111";
+
     }
 }
