@@ -37,4 +37,9 @@ public class ApacheClientAuthentication {
             e.printStackTrace();
         }
     }
+
+    public String getString(){
+        System.out.println("1111111");
+        return "111111";
+    }
 }
