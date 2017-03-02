@@ -30,9 +30,9 @@ public class ApachePassportlogin {
         try {
             HttpUriRequest login = RequestBuilder.post()
                     .setUri(new URI("http://ermei-ccms.stage.fenxibao.com/web-portal/credentials"))
-                    .addParameter("tenantId", "ermei")
-                    .addParameter("name", "admin")
-                    .addParameter("password", "123QWEqwe1")
+                    .addParameter("tenantId", "xxxxx")
+                    .addParameter("name", "xxxxxx")
+                    .addParameter("password", "xxxxxx")
                     .build();
           CloseableHttpResponse closeableHttpResponse =  closeableHttpClient.execute(login);
             System.out.println(closeableHttpResponse.getStatusLine());

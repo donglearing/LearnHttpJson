@@ -11,6 +11,27 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+        <guava.version>18.0</guava.version>
+        <slf4j.version>1.7.12</slf4j.version>
+        <log4j.version>1.2.16</log4j.version>
+        <migrations.version>3.2.0</migrations.version>
+        <commons-dbcp.version>1.4</commons-dbcp.version>
+        <logback.version>1.0.13</logback.version>
+        <jackson.version>1.9.13</jackson.version>
+        <mysql.jdbc.version>5.1.29</mysql.jdbc.version>
+        <postgresql.jdbc.version>9.4.1208-jdbc42-atlassian-hosted</postgresql.jdbc.version>
+        <fasterxml-jackson.version>2.5.1</fasterxml-jackson.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <springframework.version>4.0.9.RELEASE</springframework.version>
+        <rabbit.mq.version>1.4.3.RELEASE</rabbit.mq.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <httpclient.version>4.3.6</httpclient.version>
+        <spring.version>3.2.4.RELEASE</spring.version>
+        <servlet-api.version>3.1.0</servlet-api.version>
+        <jersey.version>1.17</jersey.version>
+
+
     </properties>
 
     <dependencies>
@@ -19,6 +40,12 @@
             <artifactId>jackson-core-asl</artifactId>
             <version>1.9.13</version>
         </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.7.2-ccmspw</version>
+        </dependency>
+
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
@@ -34,8 +61,63 @@
             <artifactId>guava</artifactId>
             <version>19.0</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>org.mongodb.morphia</groupId>
+            <artifactId>morphia</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
+
+    <!-- Mysql jdbc -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.29</version>
+    </dependency>
+
+    <!-- dbcp -->
+    <dependency>
+        <groupId>commons-dbcp</groupId>
+        <artifactId>commons-dbcp</artifactId>
+        <version>1.4</version>
+    </dependency>
+
+    <!-- migrations -->
+    <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-migrations</artifactId>
+        <version>3.2.0</version>
+    </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+
+        <!-- log dependency -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+
+    </dependencies>
 
 
 </project>

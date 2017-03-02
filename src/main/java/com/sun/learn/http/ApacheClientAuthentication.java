@@ -21,12 +21,12 @@ public class ApacheClientAuthentication {
     public static void main(String[] args){
         BasicCredentialsProvider credsProvider = new BasicCredentialsProvider();
         credsProvider.setCredentials(
-                new AuthScope("marathon.stress.fenxibao.com", 80),
+                new AuthScope("marathon.stage.fenxibao.com", 80),
                 new UsernamePasswordCredentials("shuyunmrt", "Data123321".toCharArray()));
         CloseableHttpClient httpClient = HttpClients.custom().setDefaultCredentialsProvider(credsProvider).build();
         HttpGet httpGet = new HttpGet();
         try {
-        httpGet.setURI(new URI("http://marathon.stress.fenxibao.com/v2/apps"));
+        httpGet.setURI(new URI("http://marathon.stage.fenxibao.com/ui/#/apps"));
         System.out.println("Executing request " + httpGet.getRequestLine());
 
             CloseableHttpResponse response = httpClient.execute(httpGet);
@@ -38,29 +38,4 @@ public class ApacheClientAuthentication {
         }
     }
 
-	public static void get(String[] args){
-        BasicCredentialsProvider credsProvider = new BasicCredentialsProvider();
-        credsProvider.setCredentials(
-                new AuthScope("marathon.stress.fenxibao.com", 80),
-                new UsernamePasswordCredentials("shuyunmrt", "Data123321".toCharArray()));
-        CloseableHttpClient httpClient = HttpClients.custom().setDefaultCredentialsProvider(credsProvider).build();
-        HttpGet httpGet = new HttpGet();
-        try {
-        httpGet.setURI(new URI("http://marathon.stress.fenxibao.com/v2/apps"));
-        System.out.println("Executing request " + httpGet.getRequestLine());
-
-            CloseableHttpResponse response = httpClient.execute(httpGet);
-            System.out.println("--------------------dssadad--dasdsa------------------");
-            System.out.println(response.getStatusLine());
-            System.out.println(EntityUtils.toString(response.getEntity()));
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
-
-    public String getString(){
-        System.out.println("1111111");
-        return "111111";
-
-    }
 }
