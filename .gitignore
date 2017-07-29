@@ -42,6 +42,8 @@ atlassian-ide-plugin.xml
 */.settings
 .metadata
 */.metadata
+src/main/java/TestRun/
+.gitignore
 
 
 # NetBeans specific files/directories
