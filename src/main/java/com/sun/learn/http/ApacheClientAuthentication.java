@@ -22,7 +22,7 @@ public class ApacheClientAuthentication {
         BasicCredentialsProvider credsProvider = new BasicCredentialsProvider();
         credsProvider.setCredentials(
                 new AuthScope("marathon.stage.fenxibao.com", 80),
-                new UsernamePasswordCredentials("shuyunmrt", "Data123321".toCharArray()));
+                new UsernamePasswordCredentials("xxxxxx", "xxxxxx".toCharArray()));
         CloseableHttpClient httpClient = HttpClients.custom().setDefaultCredentialsProvider(credsProvider).build();
         HttpGet httpGet = new HttpGet();
         try {
