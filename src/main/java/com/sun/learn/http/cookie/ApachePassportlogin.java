@@ -25,7 +25,7 @@ public class ApachePassportlogin {
     public static void main(String[] args){
         CloseableHttpClient closeableHttpClient = HttpClients.createDefault();
 
-//        HttpPost httpPost = new HttpPost("http://ermei-ccms.stage.fenxibao.com/web-portal/credentials?tenantId=ermei&name=admin&password=123QWEqwe");
+//        HttpPost httpPost = new HttpPost("http://ermei-ccms.stage.fenxibao.com/web-portal/credentials?tenantId=ermei&name=admin&password=xxxxx");
 
         try {
             HttpUriRequest login = RequestBuilder.post()
