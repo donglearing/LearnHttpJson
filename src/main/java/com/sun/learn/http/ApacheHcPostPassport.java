@@ -47,9 +47,9 @@ public class ApacheHcPostPassport {
         final NameValuePair parameters[] = new NameValuePair[3];
 
 
-        parameters[0] = new BasicNameValuePair("tenantId", "ermei");
-        parameters[1] = new BasicNameValuePair("name", "admin");
-        parameters[2] = new BasicNameValuePair("password", "123QWEqwe");
+        parameters[0] = new BasicNameValuePair("tenantId", "xxxx");
+        parameters[1] = new BasicNameValuePair("name", "xxxx");
+        parameters[2] = new BasicNameValuePair("password", "xxxxx");
 
         ObjectMapper objectMapper = new ObjectMapper();
 
